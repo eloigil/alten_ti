@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.scss';
-import PartPage from './pages/PartPage';
 
 import { Provider } from 'react-redux'
 import store from './store'
+
+import Header from './layout/Header';
+import PartPage from './pages/PartPage';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <h1>Hello world!</h1>
+        <Header />
 
         <PartPage />
       </div>
