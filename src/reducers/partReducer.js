@@ -1,19 +1,19 @@
-import { GET_ITEMS, ITEMS_LOADING } from '../actions/types'
+import { GET_PART, PART_LOADING } from '../actions/types'
 
 const initialState = {
-  items: [],
+  part: {},
   loading: false
 }
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case GET_ITEMS:
+    case GET_PART:
       return {
         ...state,
-        items: action.payload,
+        part: action.payload,
         loading: false
       }
-    case ITEMS_LOADING:
+    case PART_LOADING:
       return {
         ...state,
         loading: true

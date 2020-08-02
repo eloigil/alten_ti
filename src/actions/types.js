@@ -1,2 +1,2 @@
-export const GET_ITEMS = 'GET_ITEMS'
-export const ITEMS_LOADING = 'ITEMS_LOADING'
+export const GET_PART = 'GET_PART'
+export const PART_LOADING = 'PART_LOADING'
