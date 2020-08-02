@@ -16,8 +16,8 @@ class PartPage extends Component {
     const { part } = this.props.part
 
     return (
-      <div class="page">
-        <h2 class="page__title">{part.name}</h2>
+      <div className="page">
+        <h2 className="page__title">{part.name}</h2>
 
         { part.features ? <FeaturesList features={part.features}/> : null}
       </div>

@@ -1,0 +1,7 @@
+.featuresList {
+  display: grid;
+  min-height: 400px;
+  grid-template-columns: repeat(12, 12fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-gap: 8px;
+}

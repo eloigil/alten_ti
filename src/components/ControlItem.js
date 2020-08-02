@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 
 import PropTypes from 'prop-types'
 
+import StatusIcon from './StatusIcon'
+
 class ControlItem extends Component {
 
   render () {
@@ -11,7 +13,7 @@ class ControlItem extends Component {
         <span>{control.type}</span>
         <span>{control.dev}</span>
         <span>{control.devOutTotal}</span>
-        <span>{control.status}</span>
+        <span><StatusIcon status={control.status}/></span>
       </li>
     ) 
   }

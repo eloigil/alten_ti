@@ -1,0 +1,20 @@
+.statusIcon {
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  &--ok {
+    border-color: #06D6A0;
+    color: #06D6A0;
+  }
+  &--alert {
+    border-color: #ffd166;
+    color: #ffd166;
+  }
+  &--error {
+    border-color: #ef476f;
+    color: #ef476f;
+  }
+}

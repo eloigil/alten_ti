@@ -9,10 +9,10 @@ class FeaturesList extends Component {
   render () {
     const features = this.props.features
     return (
-      <div>
+      <div className="featuresList">
           { features ?
-            features.map(feature => (
-              <FeatureCard feature={feature} />
+            features.map((feature, index) => (
+              <FeatureCard feature={feature} key={index} />
             ))
           : null }
       </div>
