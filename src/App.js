@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import FeaturesList from './components/FeaturesList';
+import PartPage from './pages/PartPage';
 
 import { Provider } from 'react-redux'
 import store from './store'
@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <h1>Hello world!</h1>
 
-        <FeaturesList />
+        <PartPage />
       </div>
     </Provider>
   );

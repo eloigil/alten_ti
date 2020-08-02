@@ -1,27 +1,21 @@
 import React, {Component} from 'react'
 
-import { connect } from 'react-redux'
-import { getPart } from '../actions/partActions'
 import PropTypes from 'prop-types'
 
 class FeaturesList extends Component {
 
-  componentDidMount () {
-    this.props.getPart()
-  }
-
   render () {
-    const part = this.props.part
+    const features = this.props.features
     return (
       <div>
         <ul>
-          {part.part.features ?
-            part.part.features.map(({_id, name}) => (
+          { features ?
+            features.map(({_id, name}) => (
               <li key={_id}>
                 <span>{name}</span>
               </li>
             ))
-          : null}
+          : null }
         </ul>
       </div>
     ) 
@@ -29,15 +23,7 @@ class FeaturesList extends Component {
 }
 
 FeaturesList.propTypes = {
-  getPart: PropTypes.func.isRequired,
-  part: PropTypes.object.isRequired
+  features: PropTypes.array.isRequired
 }
 
-const mapStateToProps = (state) => ({
-  part: state.part
-})
-
-export default connect(
-  mapStateToProps,
-  { getPart }
-)(FeaturesList)
+export default FeaturesList
