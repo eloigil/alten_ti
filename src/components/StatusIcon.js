@@ -6,8 +6,9 @@ class StatusIcon extends Component {
 
   render () {
     const status = this.props.status
+    const isWhite = this.props.white
     
-    const classes = `statusIcon statusIcon--${status}`
+    const classes = `statusIcon statusIcon--${status}` + (isWhite ? ' statusIcon--white' : '')
     return (
       <div className={classes}>
           {status === 'ok' ? <span> ✓ </span> : null}

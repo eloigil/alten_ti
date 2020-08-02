@@ -1,6 +1,10 @@
 .statusIcon {
+  font-size: 10px;
+  font-weight: 800;
   border: 1px solid black;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -16,5 +20,9 @@
   &--error {
     border-color: #ef476f;
     color: #ef476f;
+  }
+  &--white {
+    border-color: #fff;
+    color: #fff;
   }
 }

@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
 import ControlItem from './ControlItem'
+import StatusIcon from './StatusIcon'
 
 class FeatureCard extends Component {
 
@@ -19,6 +20,7 @@ class FeatureCard extends Component {
       <div className="featureCard" style={gridStyles}>
         <div className={classes}>
           <h4>{feature.name}</h4>
+          <StatusIcon status={feature.status} white/>
         </div>
         <div className="featureCard__body">
           <ul>
