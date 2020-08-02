@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 
 import PropTypes from 'prop-types'
 
+import ControlItem from './ControlItem'
+
 class FeatureCard extends Component {
 
   render () {
@@ -12,6 +14,11 @@ class FeatureCard extends Component {
           <h4>{feature.name}</h4>
         </div>
         <div className="featureCard__body">
+          <ul>
+            {feature.controls.map(control => 
+              <ControlItem control={control}/>
+              )}
+          </ul>
         </div>
       </div>
     ) 
