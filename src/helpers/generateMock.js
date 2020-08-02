@@ -32,7 +32,7 @@ export default function generateMock () {
         {
           _id: 123452,
           name: 'Hole 2',
-          status: 'ok',
+          status: 'error',
           controls: [
             {
               type: 'x',

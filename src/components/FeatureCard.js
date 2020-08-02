@@ -8,9 +8,10 @@ class FeatureCard extends Component {
 
   render () {
     const feature = this.props.feature
+    const classes = `featureCard__header featureCard__header--${feature.status}`
     return (
       <div className="featureCard">
-        <div className="featureCard__header">
+        <div className={classes}>
           <h4>{feature.name}</h4>
         </div>
         <div className="featureCard__body">
