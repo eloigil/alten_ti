@@ -3,5 +3,7 @@
 @import './styles/header.scss';
 
 .App {
+  min-height: 100vh;
+  padding-top: 50px;
   background-color: #cecece;
 }
