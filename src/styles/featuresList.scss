@@ -1,7 +1,10 @@
 .featuresList {
-  display: grid;
   min-height: 400px;
-  grid-template-columns: repeat(12, 12fr);
-  grid-template-rows: repeat(2, 2fr);
-  grid-gap: 8px;
+  display: block;
+  @media screen and (min-width: 679px){
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(12, 12fr);
+    grid-template-rows: repeat(2, 2fr);
+  }
 }

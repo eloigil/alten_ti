@@ -5,6 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &__title {
+    font-size: 12px;
+    font-weight: 700;
+  }
   &>span {
     width: 28%;
     text-align: end;

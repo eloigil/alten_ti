@@ -10,6 +10,9 @@ class PartPage extends Component {
 
   componentDidMount () {
     this.props.getPart()
+    setInterval (() => {
+      this.props.getPart()
+    }, 10000) 
   }
 
   render () {

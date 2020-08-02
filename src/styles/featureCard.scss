@@ -1,5 +1,10 @@
 .featureCard {
   background-color: #fff;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 679px){
+    margin-bottom: 0;
+  }
 
   &__header {
     height: 48px;

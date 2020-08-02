@@ -24,6 +24,12 @@ class FeatureCard extends Component {
         </div>
         <div className="featureCard__body">
           <ul>
+            <li className="controlItem controlItem__title">
+              <span>Control</span>
+              <span>Dev</span>
+              <span>Dev tot</span>
+              <span></span>
+            </li>
             {feature.controls.map((control, index) => 
               <ControlItem control={control} key={index}/>
               )}
