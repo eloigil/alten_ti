@@ -1,6 +1,8 @@
 // import axios from 'axios'
 import { GET_PART, PART_LOADING } from './types'
 
+import generateMock from '../helpers/generateMock'
+
 export const getPart = id => dispatch => {
   dispatch(setPartLoading())
   // Removed HTTP request
@@ -15,25 +17,7 @@ export const getPart = id => dispatch => {
 
   // GET Mock
   new Promise((resolve, reject) => {
-    const mockedData = {
-      data: {
-        _id: '12345',
-        name: 'Part A',
-        features: [
-          {
-            _id: 123451,
-            name: 'Hole 1',
-            controls: [
-              {
-                type: 'x',
-                dev: 0.01,
-                devOutTotal: 0.02,
-              }
-            ]
-          }
-        ]
-      }
-    }
+    const mockedData = generateMock()
     resolve(mockedData)
   })
   .then(res =>
