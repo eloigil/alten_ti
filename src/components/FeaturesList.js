@@ -2,21 +2,19 @@ import React, {Component} from 'react'
 
 import PropTypes from 'prop-types'
 
+import FeatureCard from './FeatureCard'
+
 class FeaturesList extends Component {
 
   render () {
     const features = this.props.features
     return (
       <div>
-        <ul>
           { features ?
-            features.map(({_id, name}) => (
-              <li key={_id}>
-                <span>{name}</span>
-              </li>
+            features.map(feature => (
+              <FeatureCard feature={feature} />
             ))
           : null }
-        </ul>
       </div>
     ) 
   }
